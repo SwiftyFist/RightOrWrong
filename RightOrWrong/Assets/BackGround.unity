@@ -3264,6 +3264,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1817600517}
+  - 114: {fileID: 1817600516}
   m_Layer: 0
   m_Name: _GM
   m_TagString: Untagged
@@ -3271,6 +3272,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1817600516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1817600515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bf5c5ec45b1d7a4fb9011e7f10bbe0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1866897113}
+  badGuys:
+  - {fileID: 1646033062}
+  - {fileID: 959955207}
+  - {fileID: 1599876934}
+  - {fileID: 1599876934}
+  bullied: {fileID: 1543785916}
 --- !u!4 &1817600517
 Transform:
   m_ObjectHideFlags: 0
