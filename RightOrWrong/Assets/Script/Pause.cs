@@ -5,12 +5,6 @@ public class Pause : MonoBehaviour
 {
 
     #region Variabili
-    [SerializeField] private GameObject player;
-    [SerializeField] private GameObject[] badGuys;
-    [SerializeField] private GameObject bullied;
-
-
-    bool showPauseMenu = false;
     bool paused = false;
     #endregion
 
