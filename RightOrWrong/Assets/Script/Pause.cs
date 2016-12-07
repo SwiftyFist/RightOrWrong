@@ -20,6 +20,7 @@ public class Pause : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.Escape))
         {
             paused = PauseControl();
+            //Disattivare gli script di movimento per impedire la riproduzione del suono
         }
     }
 

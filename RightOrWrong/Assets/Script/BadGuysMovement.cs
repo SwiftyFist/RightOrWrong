@@ -267,6 +267,7 @@ public class BadGuysMovement : MonoBehaviour
                 break;
         }
 
+        GetComponent<AudioSource>().Play();
 
     }
 

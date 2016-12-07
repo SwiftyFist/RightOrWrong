@@ -3,6 +3,7 @@ using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] private AudioSource[] audioSurces;
     public static int playerScore = 0; //Tiene conto dei punti del player    
     
     public static void score (string subjectName)//Assegna i punti al player
@@ -20,5 +21,37 @@ public class GameManager : MonoBehaviour
         }
 
         Debug.Log("Player score = " + playerScore);
+    }
+
+    void Awake()
+    {
+    }
+
+    void Update ()
+    {
+        if (playerScore > -1)
+        {
+            audioSurces[1].Stop();
+            audioSurces[0].Play();
+        }
+        else
+        {
+            audioSurces[0].Stop();
+            audioSurces[1].Play();
+        }
+    }
+
+    void SourcesToPlay(int i)
+    {
+        if (audioSurces[0].isPlaying)
+        {
+            audioSurces[0].Stop();
+            audioSurces[1].Play();
+        }
+        else if (audioSurces[1].isPlaying)
+        {
+            audioSurces[1].Stop();
+            audioSurces[0].Play();
+        }
     }
 }
