@@ -72,7 +72,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(dash))
         {
             GameManager.score(colInfo.collider.name);
-            GetComponent<AudioSource>().Play();
+            GameObject.FindWithTag("Player").GetComponent<AudioSource>().Play();
         }
     }
 
